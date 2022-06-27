@@ -19,3 +19,8 @@ Feature: Usuario ingresa a navegar en Youtube
     Given Ingreso a la pagina de Sunat
     When ingrso mis datos
     Then me muestra pagina principal de SUNAT
+
+  Scenario: Usuario ingresa TIKTOK
+    Given Ingreso a la pagina de Tiktok
+    When ingrso mis datoss
+    Then me muestra pagina principal de tiktok

@@ -60,22 +60,38 @@ public class BusquedaSteps extends Base {
 
 	@Given("Ingreso a la pagina de Sunat")
 	public void ingreso_a_la_pagina_de_sunat() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("Paso 1");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("Paso 1");
 	}
 
 	@When("ingrso mis datos")
 	public void ingrso_mis_datos() {
-	    // Write code here that turns the phrase above into concrete actions
+		// Write code here that turns the phrase above into concrete actions
 		System.out.println("Paso 2");
 	}
 
 	@Then("me muestra pagina principal de SUNAT")
 	public void me_muestra_pagina_principal_de_sunat() {
-	    // Write code here that turns the phrase above into concrete actions
+		// Write code here that turns the phrase above into concrete actions
 		System.out.println("Paso 3");
 	}
 
-	
-	
+	@Given("Ingreso a la pagina de Tiktok")
+	public void ingreso_a_la_pagina_de_tiktok() {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("Paso A");
+	}
+
+	@When("ingrso mis datoss")
+	public void ingrso_mis_datoss() {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("Paso B");
+	}
+
+	@Then("me muestra pagina principal de tiktok")
+	public void me_muestra_pagina_principal_de_tiktok() {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("Paso C");
+	}
+
 }
