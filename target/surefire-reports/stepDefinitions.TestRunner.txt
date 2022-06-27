@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: stepDefinitions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.753 sec <<< FAILURE!
+Usuario ingresa a youtube(Usuario ingresa a navegar en Youtube)  Time elapsed: 4.341 sec  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 100
+Current browser version is 103.0.5060.53 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V13VVHS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x010E7413+2389011]
+	Ordinal0 [0x01079F61+1941345]
+	Ordinal0 [0x00F6C658+837208]
+	Ordinal0 [0x00F8C773+968563]
+	Ordinal0 [0x00F8837A+951162]
+	Ordinal0 [0x00F85C51+941137]
+	Ordinal0 [0x00FB8C80+1150080]
+	Ordinal0 [0x00FB88DA+1149146]
+	Ordinal0 [0x00FB3F66+1130342]
+	Ordinal0 [0x00F8E546+976198]
+	Ordinal0 [0x00F8F456+980054]
+	GetHandleVerifier [0x01299632+1727522]
+	GetHandleVerifier [0x0134BA4D+2457661]
+	GetHandleVerifier [0x0117EB81+569713]
+	GetHandleVerifier [0x0117DD76+566118]
+	Ordinal0 [0x01080B2B+1968939]
+	Ordinal0 [0x01085988+1989000]
+	Ordinal0 [0x01085A75+1989237]
+	Ordinal0 [0x0108ECB1+2026673]
+	BaseThreadInitThunk [0x75B4FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77A07A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77A07A6E+238]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at base.cucumber.junit.Base.chromeDriverConnection(Base.java:32)
+	at stepDefinitions.BusquedaSteps.ingreso_a_la_pagina_de_youtube(BusquedaSteps.java:13)
+	at ?.Ingreso a la pagina de youtube(file:///D:/Automatizacion/SeleniumCucumberJunit/src/test/resources/features/test.feature:4)
+
